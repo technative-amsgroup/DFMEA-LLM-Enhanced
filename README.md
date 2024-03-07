@@ -33,4 +33,4 @@ Now you're ready to start working on the documentation!
 
 ## Accessing the Documentation Online
 
-The documentation for Chat2IA is hosted on ReadTheDocs. You can access it online by following this [link](https://gia-llm.readthedocs.io/en/latest/). Feel free to explore and learn more about the project.
+The documentation for DFMEA WITH LLMs is hosted on ReadTheDocs. You can access it online by following this [link](https://fmea-llm-enhanced.readthedocs.io/en/latest/). Feel free to explore and learn more about the project.
