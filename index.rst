@@ -19,12 +19,12 @@ les avis clients négatifs pour identifier les caractéristiques importantes.
 De plus, nous avons développé un tableau de bord pour suivre les résultats de
 l’analyse des avis clients et les améliorations apportées par l’entreprise, offrant
 ainsi une vision complète de l’évolution des problèmes.
-
-Sommaire
-========
+----------------------------------------------------------------------------------------------------------------------------------
+See the :doc:`Documentation/Pipeline` section for more details.
 
 .. toctree::
    :maxdepth: 2
-
+   :hidden:
+   Documentation/Pipeline
    Documentation/Data_Techniques
    
