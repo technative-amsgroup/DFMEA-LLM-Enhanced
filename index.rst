@@ -31,4 +31,3 @@ Sommaire
    :maxdepth: 2
    
    index
-   Documentation/scripts/Data_Techniques
