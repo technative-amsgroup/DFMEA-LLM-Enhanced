@@ -9,7 +9,9 @@ Welcome to LLM ENHANCED FMEA documentation!
 
 ..    ..
 
+Contents
+--------
+
 .. toctree::
-   :maxdepth: 2
-   :caption: Table of Content:
-      Documentation/scripts/Data_Techniques
+
+   Documentation/scripts/Data_Techniques
