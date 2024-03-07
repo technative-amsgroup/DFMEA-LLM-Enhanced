@@ -1,6 +1,6 @@
 Data Collection Techniques used in this project
 ====================================
-- Web scraping
+- Web scraping :doc:`(webscraping)`
 - Surveys and questionnaires
 - Interviews
 - Observations
@@ -8,11 +8,3 @@ Data Collection Techniques used in this project
 - Experimentation
 - Sensor data collection
 - Social media monitoring
-
-
-
-Details:
-*******************
-.. toctree::
-   :maxdepth: 2
-   webscrapping

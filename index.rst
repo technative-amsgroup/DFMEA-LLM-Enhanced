@@ -26,5 +26,5 @@ Sommaire
 .. toctree::
    :maxdepth: 2
 
-   Data_Techniques
+   Documentation/Data_Techniques
    
