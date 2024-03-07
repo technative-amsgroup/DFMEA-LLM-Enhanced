@@ -13,7 +13,7 @@ Data Collection Techniques used in this project
 
 
 Details:
-***********************
+*******************
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
    webscrapping
