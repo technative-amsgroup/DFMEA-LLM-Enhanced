@@ -24,7 +24,7 @@ Sommaire
 ========
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
 
    Data_Techniques
    

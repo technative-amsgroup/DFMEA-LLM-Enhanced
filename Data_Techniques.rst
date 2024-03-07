@@ -8,8 +8,7 @@ Data Collection Techniques used in this project
 - Experimentation
 - Sensor data collection
 - Social media monitoring
-- Data logging
-- API integration
+
 
 
 Details:
