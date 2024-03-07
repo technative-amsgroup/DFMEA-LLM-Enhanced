@@ -4,7 +4,7 @@ Welcome to LLM ENHANCED FMEA documentation!
 .. figure:: /Documentation/images/logo.jpg
    :width: 80%
    :align: left
-   :alt: Alternative text for the image
+   :alt: image
    :name: logo
 
    ..

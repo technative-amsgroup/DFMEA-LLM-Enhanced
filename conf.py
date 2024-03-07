@@ -2,8 +2,8 @@
 
 # -- Project information
 
-project = 'Lumache'
-copyright = '2021, Graziella'
+project = 'DFMEA with LLMs'
+copyright = '2024,GIIA,ENSAM-Meknès'
 author = 'Graziella'
 
 release = '0.1'
