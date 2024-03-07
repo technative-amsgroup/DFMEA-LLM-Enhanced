@@ -11,13 +11,6 @@ Data Collection Techniques used in this project
 - Data logging
 - API integration
 
-.. figure:: /Documentation/images/logo.jpg
-   :width: 80%
-   :align: left
-   :alt: image
-   :name: logo
-
-   ..
 
 .. toctree::
    :maxdepth: 2

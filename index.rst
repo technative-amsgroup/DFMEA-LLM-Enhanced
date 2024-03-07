@@ -12,3 +12,4 @@ Welcome to LLM ENHANCED FMEA documentation!
 .. toctree::
    :maxdepth: 2
    :caption: Table of Content:
+      Documentation/scripts/Data_Techniques
