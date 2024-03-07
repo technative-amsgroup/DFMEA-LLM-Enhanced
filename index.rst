@@ -24,5 +24,5 @@ Contents
 --------
 
 .. toctree::
-
+   index
    Documentation/scripts/Data_Techniques
