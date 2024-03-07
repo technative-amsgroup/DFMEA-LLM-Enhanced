@@ -1,6 +1,6 @@
 Data Collection Techniques used in this project
 ====================================
-- Web scraping :doc:`(webscraping)`
+- :doc:`webscraping`
 - Surveys and questionnaires
 - Interviews
 - Observations
