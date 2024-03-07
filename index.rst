@@ -1,9 +1,10 @@
+
 Documentation du projet : Intégration des Large Language Models (LLMs)
 pour l’Analyse des Modes de Défaillances, de leurs
 Effets et de leur Criticité (AMDEC)
 ====================================
 
-.. note :
+.. note ::
    Cette documentation est sous construction.
 
 Ce projet propose une nouvelle approche d’amélioration de l’Analyse des
