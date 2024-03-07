@@ -20,9 +20,15 @@ De plus, nous avons développé un tableau de bord pour suivre les résultats de
 l’analyse des avis clients et les améliorations apportées par l’entreprise, offrant
 ainsi une vision complète de l’évolution des problèmes.
 
-Contents
---------
+.. contents::
+   :depth: 2
+   :local:
+
+Sommaire
+========
 
 .. toctree::
+   :maxdepth: 2
+   
    index
    Documentation/scripts/Data_Techniques
