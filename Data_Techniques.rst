@@ -12,7 +12,8 @@ Data Collection Techniques used in this project
 - API integration
 
 
+Details:
+***********************
 .. toctree::
-   :maxdepth: 2
-   :caption: techniques:
+   :maxdepth: 1
    webscrapping
