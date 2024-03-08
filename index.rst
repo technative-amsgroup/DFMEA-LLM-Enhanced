@@ -23,7 +23,7 @@ ainsi une vision complète de l’évolution des problèmes.
 See the :doc:`Documentation/Pipeline` section for more details.
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 0
    :caption: Table of Content:
 
    Documentation/Pipeline
