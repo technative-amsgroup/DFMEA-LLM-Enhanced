@@ -24,7 +24,8 @@ See the :doc:`Documentation/Pipeline` section for more details.
 
 .. toctree::
    :maxdepth: 2
-   :hidden:
+   :caption: Table of Content:
+   
    Documentation/Pipeline
    Documentation/Data_Techniques
    
