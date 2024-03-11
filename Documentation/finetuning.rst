@@ -23,4 +23,4 @@ Les avantages du fine-tuning
 - Réduit les hallucinations.
 - Personnalise le modèle à un cas d'utilisation spécifique.
 - Le processus est similaire à la formation antérieure du modèle.
-- gogo
+- gogon
