@@ -1,3 +1,6 @@
+Methodologie (Hands on)
+====================================
+
 Ok, so now, for educational purposes only, we’re going to start with some hands-on activities just to cement the concepts firmly in our minds. To do that, we're going to be using the following libraries:
 - PyTorch (provides the lowest level interface)
 - Hugging Face Transformers
@@ -99,3 +102,5 @@ And finally, to store the fine-tuning data, we usually opt for the JSONL format:
    finetuning_dataset_name = "your_username/company_docs"
    finetuning_dataset = load_dataset(finetuning_dataset_name)
    print(finetuning_dataset)
+
+

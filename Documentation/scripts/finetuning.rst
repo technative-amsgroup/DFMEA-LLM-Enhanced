@@ -78,3 +78,12 @@ Tâches pour affiner un modèle de langage
       
 - La clarté de la tâche est un indicateur clé du succès
 - Clarté signifie savoir ce qui est mauvais, bon et meilleur
+
+.. note:: 
+   de plus le process de finetunning est géneralement un process itteratif.
+
+.. figure:: Documentation/images/itteratif.png
+   :alt: fine-tuning
+   :align: center
+   :width: 50%
+   :height: 50%
