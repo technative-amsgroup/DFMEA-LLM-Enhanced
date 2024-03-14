@@ -24,4 +24,5 @@ ainsi une vision complète de l’évolution des problèmes.
    :caption: Table of Content:
 
    Documentation/scripts/finetuning
+   Documentation/scripts/webscraping
    
