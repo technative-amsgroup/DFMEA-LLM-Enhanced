@@ -7,15 +7,15 @@ Le fine-tuning est un processus itératif visant à améliorer la performance d'
  les connaissances préalablement acquises lors de l'entraînement initial. Cette approche repose sur la capacité du modèle à généraliser 
  à de nouveaux domaines tout en conservant sa capacité à se spécialiser. En ajustant les poids des connexions entre les neurones,
 le fine-tuning permet d'adapter le modèle à la nouvelle tâche sans altérer de manière significative les connaissances pré-existantes.
-.. image:: images/finetuning_01
-   :alt: fine-tuning
+
+.. image:: Documentation/images/finetuning_01.png
    :align: center
    :width: 50%
    :height: 50%
 
 Prenons par exemple un modèle de langage naturel standard. Bien qu'il puisse répondre à vos questions spécifiques concernant un certain domaine, la réponse reste généralement vague. En revanche, si nous le finetunons sur des données spécifiques à ce domaine, la réponse sera transformée de manière à être plus précise et détaillée.
 
-.. image:: images/finetuning_02.png
+.. image:: Documentation/images/finetuning_02.png
    :align: center
    :width: 50%
    :height: 50%
@@ -57,7 +57,7 @@ Que fait le finetuning pour vous?
    - Avoir une connaissance plus ou moins limité a l'entreprise dans notre cas
    - Corriger les anciennes informations incorrectes
 
-.. image:: images/finetuning_03.png
+.. image:: Documentation/images/finetuning_03.png
    :alt: fine-tuning
    :align: center
    :width: 50%
