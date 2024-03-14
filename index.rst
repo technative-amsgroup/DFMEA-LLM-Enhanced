@@ -31,3 +31,4 @@ ainsi une vision complète de l’évolution des problèmes.
 
    Documentation/scripts/finetuning
    Documentation/scripts/hands_on_finetuning
+   Documentation/scripts/webscraping
