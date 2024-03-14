@@ -128,5 +128,6 @@ Bien sûr ! Si vous souhaitez une compréhension plus approfondie de ce qui se p
 
 .. note:: 
    Maintenant, nous pouvons recharger le modèle pour nos besoins de la manière suivante :
+   
 .. code-block:: python
    finetuned_model = AutoModelForCausalLM.from_pretrained(save_dir, local_files_only=True)

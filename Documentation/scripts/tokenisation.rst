@@ -4,7 +4,7 @@ La tokenisation et le split
 
 Une fois que nous avons préparé le jeu de données d'affinage de manière appropriée, nous devons procéder à sa tokenisation ! Nous utilisons le même tokenizer que celui du modèle que nous allons affiner.
 
-.. figure:: Documentation/images/dd.png
+.. figure:: /Documentation/images/dd.png
    :alt: tokenizing
    :align: center
    :width: 50%
