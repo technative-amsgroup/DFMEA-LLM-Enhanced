@@ -2,10 +2,16 @@
 Documentation du projet:
 ========================
 
-Intégration des Large Language Models (LLMs) pour l’Analyse des Modes de Défaillances, de leurs Effets et de leur Criticité (AMDEC)
+Intégration des Grands Modèles de Langage (LLMs) pour l’Analyse des Modes de Défaillances, de leurs Effets et de leur Criticité (AMDEC)
 ----------------------------------------------------------------------------------------------------------------------------------
 
+.. figure:: /Documentation/images/logo.png
+   :width: 80%
+   :align: center
+   :alt: Alternative text for the image
+   :name: logo
 
+   ..
 
 
 Ce projet propose une nouvelle approche d’amélioration de l’Analyse des
@@ -24,4 +30,4 @@ ainsi une vision complète de l’évolution des problèmes.
    :caption: Table of Content:
 
    Documentation/scripts/finetuning
-   
+   Documentation/scripts/hands_on_finetuning
