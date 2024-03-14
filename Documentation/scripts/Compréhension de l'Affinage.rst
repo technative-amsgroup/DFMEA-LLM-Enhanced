@@ -1,4 +1,4 @@
-Fine tuning 
+Compréhension de l'Affinage : Théorie et Concepts
 ====================================
 
 C'est quoi d'abord le finetuning?

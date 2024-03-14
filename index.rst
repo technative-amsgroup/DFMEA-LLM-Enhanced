@@ -29,6 +29,5 @@ ainsi une vision complète de l’évolution des problèmes.
    :maxdepth: 2
    :caption: Table of Content:
 
-   Documentation/scripts/finetuning
-   Documentation/scripts/hands_on_finetuning
+   Documentation/scripts/Fine tuning
    Documentation/scripts/webscraping
