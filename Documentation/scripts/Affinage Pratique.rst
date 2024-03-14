@@ -1,7 +1,15 @@
 
 Affinage Pratique : Guide Pratique
 ===============================================================
+.. toctree::
+    :maxdepth: 2
+    :caption: Contents:
 
+    Pretraitement
+    tokenisation
+    Entrainement
+
+    
 Introduction
 ------------
 Pour des fins éducatives, nous allons nous lancer dans des activités pratiques afin de consolider fermement les concepts dans nos esprits, en incluant des exemples de code et des tutoriels.
@@ -46,13 +54,7 @@ Difference entre un modèle finetuné et une architecture pré-entrainée:
 .. note::
 Nous pouvons affiner un modèle plus d'une fois pour des fonctionnalités supplémentaires. Comme on le voit ici, nous avons affiné le LLM pour la discussion, mais nous pouvons également l'affiner pour jouer, par exemple, le rôle d'un assistant dans une entreprise donnée, en utilisant leurs informations de questions-réponses ou des conversations précédentes entre assistant et client.
 
-.. toctree::
-    :maxdepth: 2
-    :caption: Contents:
 
-    Pretraitement
-    tokenisation
-    Entrainement
     
 
 

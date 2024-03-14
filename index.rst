@@ -10,7 +10,7 @@ Intégration des Grands Modèles de Langage (LLMs) pour l’Analyse des Modes de
    :align: center
    :alt: Alternative text for the image
    :name: logo
-   
+
 Ce projet propose une nouvelle approche d’amélioration de l’Analyse des
 Modes de Défaillances, de leurs Effets et de leur Criticité (AMDEC) en intégrant
 les Large Language Models (LLMs). Notre méthode automatise le
@@ -26,5 +26,7 @@ ainsi une vision complète de l’évolution des problèmes.
    :maxdepth: 2
    :caption: Table of Content:
 
-   Documentation/scripts/Fine tuning
-   Documentation/scripts/webscraping
+   Fine tuning
+   RAG
+   webscraping
+   Data_Techniques
