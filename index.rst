@@ -26,7 +26,7 @@ ainsi une vision complète de l’évolution des problèmes.
    :maxdepth: 2
    :caption: Table of Content:
 
-   Fine tuning
-   RAG
-   webscraping
-   Data_Techniques
+   Documentation/scripts/Fine tuning
+   Documentation/scripts/RAG
+   Documentation/scripts/webscraping
+   Documentation/scripts/Data_Techniques
