@@ -18,14 +18,10 @@ les avis clients négatifs pour identifier les caractéristiques importantes.
 De plus, nous avons développé un tableau de bord pour suivre les résultats de
 l’analyse des avis clients et les améliorations apportées par l’entreprise, offrant
 ainsi une vision complète de l’évolution des problèmes.
-----------------------------------------------------------------------------------------------------------------------------------
-See the :doc:`Documentation/scripts/finetuning` section for more details.
 
 .. toctree::
-   :maxdepth: 0
+   :maxdepth: 2
    :caption: Table of Content:
 
-   Documentation/scripts/finetuning.rst
-   Documentation/scripts/Data_Techniques.rst
-   Documentations/sccripts/webscrapping.rst
+   Documentation/scripts/finetuning
    
