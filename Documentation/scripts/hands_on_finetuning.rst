@@ -1,106 +1,101 @@
-Ok, so now and for educational purposes only, we’re going to start with some hands-on just to get the concepts right into our brains, to do that were going to be using the following libraries:
-Pytorch (lowest level interface)
-Hugginface
-Llama library
+Ok, so now, for educational purposes only, we’re going to start with some hands-on activities just to cement the concepts firmly in our minds. To do that, we're going to be using the following libraries:
+- PyTorch (provides the lowest level interface)
+- Hugging Face Transformers
+- Llama Library
+
 .. note::
-    these are not necessarily the libraries we used in the project
-    but they could be a good starting point for anyone interested to explore.
-So in this first example we’re going to use the llama library to import some pretrained opensource hosted LLm (in this example its Llama 2.7)
-And compare their outputs before and after fine tunning them for chatting
+   These are not necessarily the libraries we used in the project,
+   but they could be a good starting point for anyone looking to explore.
 
-- Before chat finetuning 
-    .. code-block:: bash
-        pip install llama
-    .. code-block:: python
-        from llama import BasicModelRunner
+In this first example, we’re going to use the Llama library to import some pre-trained, open-source models hosted on Hugging Face (in this example, it's Llama 2.7). We will compare their outputs before and after fine-tuning them for chatting.
 
-        non_finetuned = BasicModelRunner("meta-llama/Llama-2-7b-hf")
-        print(non_finetuned("Tell me how to fix a broken car window"))
+Before chat fine-tuning:
+.. code-block:: bash
 
--	after chat finetuning
-    .. code-block:: python
-        finetuned_model = BasicModelRunner("meta-llama/Llama-2-7b-chat-hf")
-        print(finetuned("Tell me how to fix a broken car window"))
-    .. note::
-        We can finetune a model more than once for more features, as we can see here we fine tuned the LLM to chat but we can refine tune it to play for example the role of an assistant in a certain company given their Q&A infos or their previous assistant client conversations.
+   pip install llama-library
 
-Now we’re going to take a look at how the pretraining and finetuning data are structured and why? 
+.. code-block:: python
 
-- Pretraining data:
-    .. code-block:: python
-        import jsonlines
-        import itertools
-        import pandas as pd
-        from pprint import pprint
+   from llama import BasicModelRunner
 
-        import datasets
-        from datasets import load_dataset
-        pretrained_dataset = load_dataset("c4", "en", split="train", streaming=True)
+   non_finetuned = BasicModelRunner("meta-llama/Llama-2-7b-hf")
+   print(non_finetuned.predict("Tell me how to fix a broken car window"))
 
-    .. _c4: https://huggingface.co/datasets/c4
+After chat fine-tuning:
+.. code-block:: python
 
-    .. note:: 
-        We’re importing the dataset named ‘common crawl’ :c4:. it’s the best out there that Is open souce
-        It contains millions of examples, each one is a JSON object with keys like “id”, “created_at” , “url”, “title", contains all kinds of text and more than one million examples and is available on Kaggle.
+   finetuned_model = BasicModelRunner("meta-llama/Llama-2-7b-chat-hf")
+   print(finetuned_model.predict("Tell me how to fix a broken car window"))
 
-    Let's see the five first texts of this dataset, so you can get an idea about what is inside each text:
-    .. code-block::	 python
-        n = 5
-        print("Pretrained dataset:")
-        top_n = itertools.islice(pretrained_dataset, n)
-        for i in top_n:
-        print(i)
+.. note::
+   We can fine-tune a model more than once for additional features. As seen here, we fine-tuned the LLM for chatting, but we can also fine-tune it to play, for example, the role of an assistant in a certain company, given their Q&A information or previous assistant-client conversations.
 
-- Company finetuning dataset:
-    .. code-block::	 python
-        filename = "lamini_docs.jsonl"
-        instruction_dataset_df = pd.read_json(filename, lines=True)
-        instruction_dataset_df
+Now, let’s take a look at how the pretraining and fine-tuning data are structured and why.
 
-    as we can see its more structured in a question answer format rather than just a pile of unlabelled text 
-    but the data given here is in form of a dataframe  with two columns : Question and Answer.
-    so in order to make it compatible for finetuning we have to concatenate the questions and answers like this 
-    .. code-block:: python
-        examples = instruction_dataset_df.to_dict()
-        text = examples["question"][0] + examples["answer"][0]
-        print(text)
+Pretraining data:
+.. code-block:: python
 
-    but most of the time just concatenating the questions and answers may not be enough, so a much structured way is needed!
-    in other words its called a prompt template  because the model will be trained on these templates and then applied to generate new responses based on them.
-    This will give us one sentence containing both the question and the answer which is suitable for most models.
+   import jsonlines
+   import itertools
+   import pandas as pd
+   from pprint import pprint
 
-    The reason why we need such structured data for finetuning is because our model needs to understand context.
+   import datasets
+   from datasets import load_dataset
+   pretrained_dataset = load_dataset("c4", "en", split="train", streaming=True)
 
-    .. code-block:: python
-        prompt_template_qa = """### Question:
-        {question}
+.. _c4: https://huggingface.co/datasets/c4
 
-        ### Answer:
-        {answer}"""
-        #now let's do it for the whole dataset
-        num_examples = len(examples["question"])
-        finetuning_dataset_text_only = []
-        finetuning_dataset_question_answer = []
-        for i in range(num_examples):
-        question = examples["question"][i]
-        answer = examples["answer"][i]
+.. note:: 
+   We’re importing the dataset named 'Common Crawl' :c4:. It’s one of the best out there and is open source.
+   It contains millions of examples, each one is a JSON object with keys like “id”, “created_at”, “url”, “title”, and it contains all kinds of text. This dataset is available on Hugging Face's dataset hub.
 
-        text_with_prompt_template_qa = prompt_template_qa.format(question=question, answer=answer)
-        finetuning_dataset_text_only.append({"text": text_with_prompt_template_qa})
+Let's see the first five texts of this dataset, so you can get an idea about what is inside each text:
+.. code-block:: python
 
-        text_with_prompt_template_q = prompt_template_q.format(question=question)
-        finetuning_dataset_question_answer.append({"question": text_with_prompt_template_q, "answer": answer})
+   n = 5
+   print("Pretrained dataset samples:")
+   top_n = itertools.islice(pretrained_dataset, n)
+   for sample in top_n:
+       print(sample)
 
-    And finally to store the finetuning data we usually go for JSONL format 
+Company fine-tuning dataset:
+.. code-block:: python
 
-    .. code-block:: python
-        with jsonlines.open(f'lamini_docs_processed.jsonl', 'w') as writer:
-        writer.write_all(finetuning_dataset_question_answer)
+   filename = "company_docs.jsonl"
+   instruction_dataset_df = pd.read_json(filename, lines=True)
+   print(instruction_dataset_df.head())
 
-    .. note:: 
-        we can also upload the dataset directly to Hugginface for later uses 
+As we can see, it's more structured in a question-answer format rather than just a pile of unlabeled text. But the data here is in the form of a dataframe with two columns: "Question" and "Answer". To make it compatible for fine-tuning, we have to concatenate the questions and answers like this:
+.. code-block:: python
 
-    .. code-block:: python
-        finetuning_dataset_name = "lamini/lamini_docs"
-        finetuning_dataset = load_dataset(finetuning_dataset_name)
-        print(finetuning_dataset)
+   examples = instruction_dataset_df.to_dict(orient='records')
+   text = examples[0]["Question"] + " " + examples[0]["Answer"]
+   print(text)
+
+This structured approach, often called a prompt template, is necessary because our model needs to understand context.
+
+.. code-block:: python
+
+   prompt_template_qa = """### Question:\n{question}\n\n### Answer:\n{answer}"""
+   # Let's apply it to the whole dataset
+   finetuning_dataset = []
+   for example in examples:
+       text_with_prompt_template_qa = prompt_template_qa.format(question=example["Question"], answer=example["Answer"])
+       finetuning_dataset.append({"text": text_with_prompt_template_qa})
+
+And finally, to store the fine-tuning data, we usually opt for the JSONL format:
+
+.. code-block:: python
+
+   with jsonlines.open('company_docs_processed.jsonl', 'w') as writer:
+       writer.write_all(finetuning_dataset)
+
+.. note:: 
+   We can also upload the dataset directly to Hugging Face for later use.
+
+.. code-block:: python
+
+   finetuning_dataset_name = "your_username/company_docs"
+   finetuning_dataset = load_dataset(finetuning_dataset_name)
+   print(finetuning_dataset)
