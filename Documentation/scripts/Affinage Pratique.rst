@@ -1,6 +1,7 @@
 
 Affinage Pratique : Guide Pratique
 ===============================================================
+
 .. toctree::
     :maxdepth: 2
     :caption: Contents:
@@ -21,7 +22,8 @@ Bibliothèques Utilisées
 - **Llama Library**
 
 .. note::
-   Ce ne sont pas nécessairement les bibliothèques que nous avons utilisées dans le projet, mais elles pourraient être un bon point de départ pour quiconque souhaite explorer.
+   Ce ne sont pas nécessairement les bibliothèques que nous avons utilisées dans le projet, mais elles pourraient être un bon point de départ pour quiconque     
+   souhaite explorer.
 
 
 
