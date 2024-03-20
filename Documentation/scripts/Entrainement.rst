@@ -1,4 +1,4 @@
-Entrainement (affinage) du modèle
+Entrainement du modèle
 =====================
 
 
