@@ -3,15 +3,17 @@ Affinage Pratique : Guide Pratique
 ===============================================================
 
 .. toctree::
-    :maxdepth: 2
-    :caption: Les étapes:
+   :maxdepth: 2
+   :caption: Les étapes:
 
-    Pretraitement
-    Tokenisation
-    Entrainement
-    Ludwig
+   Pretraitement
+   tokenisation
+   entrainement
+   Ludwig
 
-    
+Overview
+^^^^^^^^^^
+
 Introduction
 ------------
 Pour des fins éducatives, nous allons nous lancer dans des activités pratiques afin de consolider fermement les concepts dans nos esprits, en incluant des exemples de code et des tutoriels.

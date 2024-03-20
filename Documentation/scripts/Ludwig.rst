@@ -5,7 +5,7 @@ Affinage par LUDWIG
 Maintenant, pour être honnête, nous n'avons pas réellement besoin de suivre toutes ces étapes à partir de zéro pour affiner un modèle de nos jours. Nous pouvons utiliser des frameworks tels que LUDWIG.
 
 .. image:: ../images/Ludwig.png
-    :width: 80%
+    :width: 100%
     :align: center
     :alt: LUDWIG framework
 
@@ -65,7 +65,7 @@ Le dataset qu'on a utilisé dans cet exemple c'est Alpaca, c'est une ressource u
 
 Alpaca comprend 52 000 instructions et démonstrations générées par l'engine text-davinci-003 d'OpenAI. Ce dataset est spécialement conçu pour le fine-tuning instructif des modèles de langue, afin d'améliorer leur capacité à suivre des instructions.
 
-.. image:: ../Images/alpaca.png
+.. image:: ../images/alpaca.png
     :width: 100%
     :align: center
     :alt: DATASET Alpaca
