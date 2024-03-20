@@ -57,10 +57,9 @@ Que fait le finetuning pour vous?
    - Corriger les anciennes informations incorrectes
 
 .. image:: ../images/finetuning_03.png
-   :alt: fine-tuning
-   :align: center
-   :width: 50%
-   :height: 50%
+    :width: 100%
+    :align: center
+    :alt: Finetuning
 
 Tâches pour affiner un modèle de langage
 --------------------------
@@ -80,7 +79,6 @@ Tâches pour affiner un modèle de langage
    de plus le process de finetunning est géneralement un process itteratif.
 
 .. figure:: ../images/itteratif.png
-   :alt: fine-tuning
+   :width: 100%
    :align: center
-   :width: 50%
-   :height: 50%
+   :alt: finetuning
