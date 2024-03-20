@@ -16,7 +16,7 @@ Documentation du projet:
 
    ..
 
-.. admonition:: Frame Title
+.. admonition:: Frrame Title
    :class: custom-frame
 
    Ce projet propose une nouvelle approche d’amélioration de l’Analyse des
