@@ -4,7 +4,7 @@ Affinage par LUDWIG
 
 Maintenant, pour être honnête, nous n'avons pas réellement besoin de suivre toutes ces étapes à partir de zéro pour affiner un modèle de nos jours. Nous pouvons utiliser des frameworks tels que LUDWIG.
 
-.. image:: ../Images/Ludwig.png
+.. image:: ../images/Ludwig.png
     :width: 80%
     :align: center
     :alt: LUDWIG framework

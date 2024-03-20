@@ -76,9 +76,9 @@ Tâches pour affiner un modèle de langage
 - Clarté signifie savoir ce qui est mauvais, bon et meilleur
 
 .. note:: 
-   de plus le process de finetunning est géneralement un process itteratif.
+   Le process de finetunning est géneralement un process itteratif.
 
 .. figure:: ../images/itteratif.png
-   :width: 100%
+   :width: 50%
    :align: center
    :alt: finetuning

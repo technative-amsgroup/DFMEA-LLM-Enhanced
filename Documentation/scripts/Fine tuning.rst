@@ -3,7 +3,7 @@ Finetuning
 
 .. toctree::
     :maxdepth: 2
-    :caption: Contents:
+    :caption: Parties:
 
     Compréhension de l'Affinage
     Affinage Pratique
