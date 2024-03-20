@@ -4,10 +4,10 @@ Affinage Pratique : Guide Pratique
 
 .. toctree::
     :maxdepth: 2
-    :caption: Contents:
+    :caption: Les étapes:
 
     Pretraitement
-    tokenisation
+    Tokenisation
     Entrainement
 
     

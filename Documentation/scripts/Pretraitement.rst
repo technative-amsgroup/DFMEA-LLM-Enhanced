@@ -19,9 +19,10 @@ Maintenant, regardons comment les données de pré-entraînement et d'affinage s
 
 .. _c4: https://huggingface.co/datasets/c4
 
-.. note:: 
-   We’re importing the dataset named 'Common Crawl' :c4:. It’s one of the best out there and is open source.
-   It contains millions of examples, each one is a JSON object with keys like “id”, “created_at”, “url”, “title”, and it contains all kinds of text. This dataset is available on Hugging Face's dataset hub.
+
+Nous importons l'ensemble de données nommé 'Common Crawl' :c4:. C'est l'un des meilleurs disponibles et il est open source. Il contient des millions d'exemples, chacun étant un objet JSON avec des clés telles que "id", "created_at", "url", "title", et il contient toutes sortes de textes. Cet ensemble de données est disponible sur la plateforme de jeux de données de Hugging Face.
+
+::
 
 Let's see the first five texts of this dataset, so you can get an idea about what is inside each text:
 
@@ -63,6 +64,12 @@ Cette approche structurée, souvent appelée modèle de prompt, est nécessaire 
 
 .. attention::
    La plupart du temps, le modèle de prompt Question/Réponse donné n'est pas suffisant ou optimal pour obtenir de bons résultats, donc nous sommes tentés d'utiliser des instructions/input/output ou des modèles supplémentaires.
+
+.. image:: ../Images/input.png
+   :width: 80%
+   :align: center
+   :alt: Format data
+
 .. code-block:: python
    prompt_template_with_input = """Below is an instruction that describes a task, paired with an input that provides further context. Write a response that appropriately completes the request.
 

@@ -29,7 +29,7 @@ Les avantages du fine-tuning
    - Réduire les informations indésirables
 
 - Confidentialité:   
-   - Sur site ou VPC
+   - Sur site ou VPC (Virtual Private Cloud)
    - Empêcher les fuites
    - Aucune violation
 
@@ -57,7 +57,7 @@ Que fait le finetuning pour vous?
    - Corriger les anciennes informations incorrectes
 
 .. image:: ../images/finetuning_03.png
-    :width: 100%
+    :width: 50%
     :align: center
     :alt: Finetuning
 

@@ -4,13 +4,16 @@ La tokenisation et le split
 
 Une fois que nous avons préparé le jeu de données d'affinage de manière appropriée, nous devons procéder à sa tokenisation ! Nous utilisons le même tokenizer que celui du modèle que nous allons affiner.
 
-.. figure:: ../images/dd.png
-   :alt: tokenizing
-   :align: center
+.. image:: ../images/dd.png
    :width: 50%
-   :height: 50%
+   :align: center
+   :alt: tokenizing
 
-D'accord, commençons par tokeniser un seul texte.
+.. attention::
+   La tokenisation ne signifie pas que chaque mot est traité comme un token. Cela dépend du modèle utilisé.
+   
+
+D'accord, commençons par tokeniser un seul texte a fin d'avoir une idée claire de ce qu'il se passe
 
 .. code-block:: python
    import pandas as pd
@@ -28,7 +31,10 @@ D'accord, commençons par tokeniser un seul texte.
 
    decoded_text = tokenizer.decode(encoded_text)
 
-Pour le faire avec beaucoup de textes à la fois, nous pouvons utiliser le padding, la troncature ou les deux. Cela est nécessaire car les différents textes ont des longueurs différentes et les modèles nécessitent des tailles d'entrée cohérentes.
+.. note:: La difference entre la tokenisation et la vectorisation
+   la tokenisation consiste à diviser le texte en unités (ou "tokens") significatives, comme des mots ou des caractères. La vectorisation, quant à elle, consiste à convertir ces tokens en vecteurs numériques afin de les utiliser dans des modèles d'apprentissage automatique. En d'autres termes, la tokenisation prépare les données textuelles en les divisant en parties significatives, tandis que la vectorisation les transforme en une forme utilisable par les algorithmes d'apprentissage automatique.
+
+a fin de tokeniser plusieurs textes à la fois, nous pouvons utiliser le padding, la troncature ou les deux. Cela est nécessaire car les différents textes ont des longueurs différentes et les modèles nécessitent des tailles d'entrée cohérentes.
 
 .. code-block:: python
    encoded_texts_both = tokenizer(list_texts, max_length=3, truncation=True, padding=True)
