@@ -5,10 +5,12 @@ La tokenisation et le split
 Une fois que nous avons préparé le jeu de données d'affinage de manière appropriée, nous devons procéder à sa tokenisation ! Nous utilisons le même tokenizer que celui du modèle que nous allons affiner.
 
 .. image:: ../images/dd.png
-   :width: 50%
+   :width: 100%
    :align: center
    :alt: tokenizing
 
+::
+   
 .. attention::
    La tokenisation ne signifie pas que chaque mot est traité comme un token. Cela dépend du modèle utilisé.
    

@@ -6,10 +6,10 @@ Affinage Pratique : Guide Pratique
    :maxdepth: 2
    :caption: Les étapes:
 
-   Pretraitement
-   tokenisation
-   entrainement
-   Ludwig
+   /Pretraitement
+   /tokenisation
+   /entrainement
+   /Ludwig
 
 Overview
 ^^^^^^^^^^
