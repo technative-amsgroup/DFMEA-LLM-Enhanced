@@ -1,6 +1,6 @@
 .. raw:: html
 
-   <link rel="stylesheet" type="text/css" href="/Documentation/Scripts/_static/custom.css">
+   <link rel="stylesheet" type="text/css" href="/Documentation/scripts/_static/custom.css">
 
 
 ========================
