@@ -2,9 +2,6 @@
 Documentation du projet:
 ========================
 
-Intégration des Grands Modèles de Langage (LLMs) pour l’Analyse des Modes de Défaillances, de leurs Effets et de leur Criticité (AMDEC)
-----------------------------------------------------------------------------------------------------------------------------------
-
 
 .. figure:: /Documentation/images/logo.jpeg
    :width: 100%
@@ -26,7 +23,7 @@ Bonne Lecture :)
 
 .. toctree::
    :maxdepth: 2
-   :caption: Table of Content:
+   :caption: Sommaire:
 
    Documentation/scripts/Fine tuning
    Documentation/scripts/RAG
