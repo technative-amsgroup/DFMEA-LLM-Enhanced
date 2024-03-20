@@ -6,7 +6,7 @@ Intégration des Grands Modèles de Langage (LLMs) pour l’Analyse des Modes de
 ----------------------------------------------------------------------------------------------------------------------------------
 
 
-.. image:: /Documentation/Images/logo.jpeg
+.. image:: /Documentation/images/logo.jpeg
    :align: center
    :alt: Alternative text for the image
    :name: logo
