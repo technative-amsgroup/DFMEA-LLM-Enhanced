@@ -1,7 +1,6 @@
 
 Affinage Pratique : Guide Pratique
 ===============================================================
-
 .. toctree::
     :maxdepth: 2
     :caption: Contents:
