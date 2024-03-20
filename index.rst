@@ -1,4 +1,9 @@
+.. raw:: html
 
+   <link rel="stylesheet" type="text/css" href="/Documentation/Scripts/_static/custom.css">
+
+
+========================
 Documentation du projet:
 ========================
 
@@ -11,10 +16,6 @@ Documentation du projet:
 
    ..
 
-::
-::
-::
-
 .. admonition:: Frame Title
    :class: custom-frame
 
@@ -24,16 +25,13 @@ Documentation du projet:
    processus d’AMDEC en combinant la collecte de données, le prétraitement,
    l’utilisation d’algorithmes d’intelligence artificielle et l’évaluation des risques.
    Une étude de cas dans l’industrie automobile a validé notre approche!
-   **Bonne Lecture :)**
-
-
-::
-::
+   Bonne Lecture :)
+   
 
 
 .. toctree::
    :maxdepth: 2
-   :caption: Sommaire:
+   :caption: Table of Content:
 
    Documentation/scripts/Fine tuning
    Documentation/scripts/RAG
