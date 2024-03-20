@@ -18,6 +18,7 @@ Une fois que nous avons préparé le jeu de données d'affinage de manière appr
 D'accord, commençons par tokeniser un seul texte a fin d'avoir une idée claire de ce qu'il se passe
 
 .. code-block:: python
+
    import pandas as pd
    import datasets
 
@@ -39,6 +40,7 @@ D'accord, commençons par tokeniser un seul texte a fin d'avoir une idée claire
 a fin de tokeniser plusieurs textes à la fois, nous pouvons utiliser le padding, la troncature ou les deux. Cela est nécessaire car les différents textes ont des longueurs différentes et les modèles nécessitent des tailles d'entrée cohérentes.
 
 .. code-block:: python
+
    encoded_texts_both = tokenizer(list_texts, max_length=3, truncation=True, padding=True)
    print("Using both padding and truncation: ", encoded_texts_both["input_ids"])
    #we can set padding or truncation to False or change the max length as there's an input limit
@@ -46,6 +48,7 @@ a fin de tokeniser plusieurs textes à la fois, nous pouvons utiliser le padding
 D'accord, procédons à la tokenisation de l'ensemble du jeu de données au format JSONL.
 
 .. code-block:: python
+
    def tokenize_function(examples):
    text = examples["question"][0] + examples["answer"][0]
     tokenizer.pad_token = tokenizer.eos_token
@@ -82,5 +85,6 @@ D'accord, procédons à la tokenisation de l'ensemble du jeu de données au form
 
 
 .. code-block:: python
+
    split_dataset = tokenized_dataset.train_test_split(test_size=0.1, shuffle=True, seed=123)
    print(split_dataset)
