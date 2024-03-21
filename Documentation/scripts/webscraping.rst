@@ -11,7 +11,9 @@ There are mainly two ways to extract data from a website:
 Why Python ?
 ---------------------
 Latelyn Python offers a rich set of tools and libraries specifically designed for web scrapin:
-1. **Requests Module**: Use libraries like BeautifulSoup or lxml to parse HTML and extract relevant data.
+
+1. :doc:`Requests`: Use libraries like BeautifulSoup or lxml to parse HTML and extract relevant data.
+
    
 2. :doc:`Beautiful-Soup`: XPath is a powerful tool for navigating XML and HTML documents. It allows you to select nodes or elements in a document using path expressions.
 
