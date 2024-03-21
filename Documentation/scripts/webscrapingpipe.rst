@@ -1,7 +1,5 @@
-
-===============================
 Web Scraping General Pipeline
-===================
+=============================
 
 
 1. **HTTP Requests**: The first step in web scraping is to send an HTTP request to the target website to fetch the web page. This can be done using libraries like `requests` or `urllib` in Python.
