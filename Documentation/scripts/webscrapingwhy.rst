@@ -17,7 +17,7 @@ Récemment, Python offre un ensemble d'outils et de bibliothèques spécialement
    
 2. :doc:`Beautiful-Soup`: XPath est un outil puissant pour naviguer dans les documents XML et HTML. Il vous permet de sélectionner des nœuds ou des éléments dans un document en utilisant des expressions de chemin.
 
-3. **Selenium**: Les expressions régulières peuvent être utilisées pour extraire des motifs spécifiques des pages web.
+3. :doc:`Selenium` : Les expressions régulières peuvent être utilisées pour extraire des motifs spécifiques des pages web.
 
 Meilleures pratiques
 ---------------------
