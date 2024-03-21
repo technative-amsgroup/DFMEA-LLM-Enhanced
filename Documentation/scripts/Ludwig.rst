@@ -2,7 +2,7 @@
 Affinage par LUDWIG
 ======================
 
-- |colab|
+- :|colab|
 
 .. |colab| image:: ../images/opencolab.png
 
