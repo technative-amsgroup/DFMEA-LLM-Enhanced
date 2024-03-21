@@ -2,10 +2,10 @@
 Affinage par LUDWIG
 ======================
 
-- Voir dans Colab : |colab|
+- |colab|
 
 .. |colab| image:: ../images/opencolab.png
-    :width: 200
+    :width: 150
     :height: 16
     :target: https://colab.research.google.com/github/MasrourTawfik/DFMEA-LLM-Enhanced/blob/main/Documentation/colabs/affinage_par_ludwig_notebook_final.ipynb\
 ..
