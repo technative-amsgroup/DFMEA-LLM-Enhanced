@@ -3,10 +3,6 @@
    <link rel="stylesheet" type="text/css" href="/Documentation/Scripts/_static/custom.css">
 
 
-========================
-Documentation du projet:
-========================
-
 
 .. figure:: /Documentation/images/logo_doc.png
    :width: 100%
@@ -14,7 +10,11 @@ Documentation du projet:
    :alt: Alternative text for the image
    :name: logo
 
-   ..
+..
+
+========================
+Documentation du projet:
+========================
 
 
 Ce projet propose une nouvelle approche d’amélioration de l’Analyse des
