@@ -1,5 +1,5 @@
 Plateforme
--------------
+=====================
 
 Notre objectif final étant de développer une plateforme intuitive, opérationnelle
 et sécurisée, dans cette section, nous allons détailler le processus de la création de
