@@ -1,31 +1,23 @@
 ===============================
-Web Scraping Techniques and Libraries
+Web Scraping with Python
 ===============================
 
-Introduction
-------------
+Web scraping is an automatic method to obtain large amounts of data from websites
+There are mainly two ways to extract data from a website:
 
-Web scraping is the process of extracting data from websites. It can be used to gather information for research, analysis, or any other purpose. In this documentation, we will explore various web scraping techniques and libraries commonly used in Python.
+- Use the API of the website (if it exists). For example, Facebook has the Facebook Graph API which allows retrieval of data posted on Facebook.
+- Access the HTML of the webpage and extract useful information/data from it. This technique is called web scraping or web harvesting or web data extraction.
 
-Basic Web Scraping Techniques
------------------------------
-
-1. **Parsing HTML**: Use libraries like BeautifulSoup or lxml to parse HTML and extract relevant data.
+Why Python ?
+---------------------
+Latelyn Python offers a rich set of tools and libraries specifically designed for web scrapin:
+1. **Requests Module**: Use libraries like BeautifulSoup or lxml to parse HTML and extract relevant data.
    
-2. **Using XPath**: XPath is a powerful tool for navigating XML and HTML documents. It allows you to select nodes or elements in a document using path expressions.
+2. **:doc:`Beautiful-Soup`**: XPath is a powerful tool for navigating XML and HTML documents. It allows you to select nodes or elements in a document using path expressions.
 
-3. **Scraping with Regular Expressions**: Regular expressions can be used to extract specific patterns from web pages.
+3. **Selenium**: Regular expressions can be used to extract specific patterns from web pages.
 
-Commonly Used Libraries
-------------------------
 
-1. **BeautifulSoup**: A Python library for pulling data out of HTML and XML files.
-
-2. **Scrapy**: An open-source and collaborative web crawling framework for Python.
-
-3. **lxml**: Another library for parsing XML and HTML documents.
-
-4. **Requests**: Although not a scraping library, the Requests library is commonly used to make HTTP requests when scraping web pages.
 
 Best Practices
 --------------
