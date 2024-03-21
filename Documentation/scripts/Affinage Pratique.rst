@@ -10,6 +10,9 @@ Affinage Pratique : Guide Pratique
    tokenisation
    entrainement
    Ludwig
+   evaluation
+   
+..
 
 Overview
 ^^^^^^^^^^

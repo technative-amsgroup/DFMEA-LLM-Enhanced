@@ -33,7 +33,8 @@ Documentation du projet:
    :maxdepth: 2
    :caption: Table of Content:
 
-   Documentation/scripts/Fine tuning
-   Documentation/scripts/RAG
-   Documentation/scripts/webscraping
-   Documentation/scripts/Data_Techniques
+   Documentation/scripts/Technologies
+   Documentation/scripts/Introduction
+   Documentation/scripts/revue
+   Documentation/scripts/methodologie
+   Documentation/scripts/Plateforme
