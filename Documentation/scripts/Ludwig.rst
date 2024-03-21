@@ -4,8 +4,8 @@ Affinage par LUDWIG
 
 - Voir dans Colab : |colab|
 
-.. |colab| image:: ../images/colab.png
-    :width: 60
+.. |colab| image:: ../images/opencolab.png
+    :width: 200
     :height: 16
     :target: https://colab.research.google.com/github/MasrourTawfik/DFMEA-LLM-Enhanced/blob/main/Documentation/colabs/affinage_par_ludwig_notebook_final.ipynb\
 ..
