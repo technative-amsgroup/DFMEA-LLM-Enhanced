@@ -4,7 +4,7 @@
 
 
 
-.. figure:: /Documentation/images/logo_doc.png
+.. figure:: /Documentation/images/final.png
    :width: 100%
    :align: center
    :alt: Alternative text for the image
