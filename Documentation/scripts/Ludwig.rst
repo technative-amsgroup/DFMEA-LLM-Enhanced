@@ -2,12 +2,11 @@
 Affinage par LUDWIG
 ======================
 
-- `Voir dans Colab <https://colab.research.google.com/github/mvhfoud/DFMEA-LLM-Enhanced/blob/main/Documentation/colabs/affinage_par_ludwig_notebook_final.ipynb>`: |colab|
+- |colab|
 
-.. |colab| image:: ../images/colab.png
-    :width: 22
-    :height: 16
-    :target: https://colab.research.google.com/github/mvhfoud/DFMEA-LLM-Enhanced/blob/main/Documentation/colabs/affinage_par_ludwig_notebook_final.ipynb
+.. |colab| image:: ../images/opencolab.png
+
+    :target: https://colab.research.google.com/github/MasrourTawfik/DFMEA-LLM-Enhanced/blob/main/Documentation/colabs/affinage_par_ludwig_notebook_final.ipynb\
 ..
 
 Maintenant, pour être honnête, nous n'avons pas réellement besoin de suivre toutes ces étapes à partir de zéro pour affiner un modèle de nos jours. Nous pouvons utiliser des frameworks tels que LUDWIG.
