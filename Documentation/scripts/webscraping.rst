@@ -7,5 +7,6 @@ Web Scraping avec Python
     :maxdepth: 2
     :caption: Parties:
    webscrapingwhy
+   webscrapingpipe
    webscrapinghow
 

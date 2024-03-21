@@ -61,11 +61,6 @@ Enfin, nous pouvons afficher les données extraites pour voir les résultats. Vo
    print("Titre :", title)
    print("Paragraphe :", paragraph)
 
-Résultat attendu
----------------
-
-Lorsque vous exécutez le code ci-dessus, vous devriez voir le résultat suivant :
-
 .. code-block:: bash
 
    Titre : Site Exemple
