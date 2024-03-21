@@ -3,18 +3,18 @@
    <link rel="stylesheet" type="text/css" href="/Documentation/Scripts/_static/custom.css">
 
 
-========================
-Documentation du projet:
-========================
 
-
-.. figure:: /Documentation/images/logo.jpeg
+.. figure:: /Documentation/images/final.png
    :width: 100%
    :align: center
    :alt: Alternative text for the image
    :name: logo
 
-   ..
+..
+
+========================
+Documentation du projet:
+========================
 
 
 Ce projet propose une nouvelle approche d’amélioration de l’Analyse des

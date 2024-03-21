@@ -18,7 +18,7 @@ contenu.
 Ces colonnes renferment des informations cruciales sur les avis relatifs aux véhicules, telles que la date de publication, l’auteur, le véhicule concerné, le titre de
 l’avis, le contenu de celui-ci, ainsi que la note attribuée
 
-Traitement des données
+Traitement des données 
 ^^^^^^^^^^^^^^^^^^
 
 Étiquetage
