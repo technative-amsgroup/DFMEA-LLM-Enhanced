@@ -1,6 +1,6 @@
 
 C'est quoi le WebScarping ?
----------------------
+==========================
 
 Le web scraping est une méthode automatique pour obtenir de grandes quantités de données à partir de sites web.
 Il existe principalement deux façons **d'extraire des données d'un site web** :
