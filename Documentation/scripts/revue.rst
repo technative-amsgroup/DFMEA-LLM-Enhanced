@@ -1,4 +1,4 @@
-Revue de littérature
+Revue de littérature ✒️
 ----------------
 
 Dès 1996, Wirth et al. ont soutenu qu’une approche basée sur la connaissance

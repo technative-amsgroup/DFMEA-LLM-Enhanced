@@ -1,7 +1,7 @@
-Approche fine tuning
+Approche fine tuning 🔧
 =====================
 
-Collecte des données
+Collecte des données 📊
 ^^^^^^^^^^^^^^^^
 
 Pour recueillir les données destinées à l’entraînement de nos modèles, nous avons

@@ -1,4 +1,4 @@
-Approche prompt engineering
+Approche prompt engineering 💭
 ------------------------
 
 Dans le cadre de notre projet, nous devrons trouver une technique de prompte
@@ -19,3 +19,7 @@ prompt fourni dans le contexte, ainsi que les instructions spécifiées au nivea
 système. Le processus est resumé dans cette figure:
 
 .. image:: ../images/completion_diagram.png
+    :width: 100%
+    :align: center
+    :alt: completion_diagram
+..

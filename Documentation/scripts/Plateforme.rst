@@ -1,4 +1,4 @@
-Plateforme
+Plateforme 📱
 =====================
 
 Notre objectif final étant de développer une plateforme intuitive, opérationnelle

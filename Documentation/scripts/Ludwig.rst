@@ -97,7 +97,7 @@ Après l'entraînement, sauvegardez le modèle pour une utilisation ou un déplo
 
     model.save("results")
 
-Vous pouvez ainsi le sauvegarder directement sur la plateforme huggingface
+Vous pouvez ainsi le sauvegarder directement sur la plateforme huggingface 🤗
 
 .. code:: bash
     

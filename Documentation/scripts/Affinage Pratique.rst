@@ -1,5 +1,5 @@
 
-Affinage Pratique : Guide Pratique
+Affinage Pratique : Guide Pratique 🖥
 ===============================================================
 
 .. toctree::
