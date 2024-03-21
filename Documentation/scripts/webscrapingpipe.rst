@@ -1,16 +1,8 @@
 
 ===============================
 Web Scraping General Pipeline
-===============================
+===================
 
-     1.HTTP Requests         2.HTML Parsing        3.Locating Elements     4.Data Extraction      5.Handling Dynamic Content
-
-    +----------------+     +----------------+     +-----------------+     +----------------+     +------------------------+
-    |                |     |                |     |                 |     |                |     |                        |
-    |  Send HTTP     |     |   Parse HTML   |     |  Locate Elements|     |  Extract Data  |     |   Handle Dynamic Content|
-    |  Requests      |     |                |     |                 |     |                |     |                        |
-    |                |     |                |     |                 |     |                |     |                        |
-    +----------------+     +----------------+     +-----------------+     +----------------+     +------------------------+
 
 1. **HTTP Requests**: The first step in web scraping is to send an HTTP request to the target website to fetch the web page. This can be done using libraries like `requests` or `urllib` in Python.
 
