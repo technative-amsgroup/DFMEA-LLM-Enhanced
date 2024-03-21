@@ -8,7 +8,7 @@ Documentation du projet:
 ========================
 
 
-.. figure:: /Documentation/images/logo.jpeg
+.. figure:: /Documentation/images/logo doc.png
    :width: 100%
    :align: center
    :alt: Alternative text for the image
