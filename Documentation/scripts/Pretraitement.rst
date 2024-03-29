@@ -1,6 +1,15 @@
 Pretraitement des données
 ===================
 
+|colab|
+
+.. |colab| image:: ../images/opencolab.png
+    :width: 120
+    :height: 20
+    :target: https://colab.research.google.com/github/MasrourTawfik/DFMEA-LLM-Enhanced/blob/main/Documentation/colabs/COMPARAISON.ipynb
+..
+
+
 Maintenant, regardons comment les données de pré-entraînement et d'affinage sont structurées et pourquoi.
 
 **données de pré-entraînement:**

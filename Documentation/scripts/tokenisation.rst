@@ -1,6 +1,14 @@
 La tokenisation et le split
 =====================
 
+|colab|
+
+.. |colab| image:: ../images/opencolab.png
+    :width: 120
+    :height: 20
+    :target: https://colab.research.google.com/github/MasrourTawfik/DFMEA-LLM-Enhanced/blob/main/Documentation/colabs/COMPARAISON.ipynb
+..
+
 
 Une fois que nous avons préparé le jeu de données d'affinage de manière appropriée, nous devons procéder à sa tokenisation ! Nous utilisons le même tokenizer que celui du modèle que nous allons affiner.
 
