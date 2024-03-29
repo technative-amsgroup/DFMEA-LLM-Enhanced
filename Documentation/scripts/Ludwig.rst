@@ -5,7 +5,7 @@ Affinage par LUDWIG
 |colab|
 
 .. |colab| image:: ../images/opencolab.png
-    :width: 100
+    :width: 110
     :height: 20
     :target: https://colab.research.google.com/github/MasrourTawfik/DFMEA-LLM-Enhanced/blob/main/Documentation/colabs/affinage_par_ludwig_notebook_final.ipynb\
 ..
