@@ -7,10 +7,20 @@ Affinage Pratique : Guide Pratique 🖥
 .. |colab| image:: ../images/opencolab.png
     :width: 120
     :height: 20
-    :target: https://colab.research.google.com/github/MasrourTawfik/DFMEA-LLM-Enhanced/blob/main/Documentation/colabs/COMPARAISON.ipynb
+    :target: https://colab.research.google.com/github/MasrourTawfik/DFMEA-LLM-Enhanced/blob/main/COMPARAISON.ipynb
 ..
 
+.. toctree::
+   :maxdepth: 2
+   :caption: Les étapes:
 
+   Pretraitement
+   tokenisation
+   entrainement
+   Ludwig
+   evaluation
+   
+..
 
 Overview
 ^^^^^^^^^^
@@ -60,17 +70,7 @@ Difference entre un modèle finetuné et une architecture pré-entrainée:
 .. note::
 Nous pouvons affiner un modèle plus d'une fois pour des fonctionnalités supplémentaires. Comme on le voit ici, nous avons affiné le LLM pour la discussion, mais nous pouvons également l'affiner pour jouer, par exemple, le rôle d'un assistant dans une entreprise donnée, en utilisant leurs informations de questions-réponses ou des conversations précédentes entre assistant et client.
 
-.. toctree::
-   :maxdepth: 2
-   :caption: Les étapes:
 
-   Pretraitement
-   tokenisation
-   entrainement
-   Ludwig
-   evaluation
-   
-..
     
 
 
