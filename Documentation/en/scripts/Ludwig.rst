@@ -1,5 +1,5 @@
 ======================
-Affinage par LUDWIG
+Refinement with LUDWIG
 ======================
 
 |colab|
@@ -10,19 +10,19 @@ Affinage par LUDWIG
     :target: https://colab.research.google.com/github/MasrourTawfik/DFMEA-LLM-Enhanced/blob/main/Documentation/colabs/affinage_par_ludwig_notebook_final.ipynb\
 ..
 
-Maintenant, pour être honnête, nous n'avons pas réellement besoin de suivre toutes ces étapes à partir de zéro pour affiner un modèle de nos jours. Nous pouvons utiliser des frameworks tels que LUDWIG.
+Now, to be honest, we don't actually need to follow all these steps from scratch to fine-tune a model these days. We can use frameworks such as LUDWIG.
 
 .. image:: ../images/Ludwig.png
     :width: 100%
     :align: center
     :alt: LUDWIG framework
 
-Cette section explique comment effectuer le fine-tuning d'un modèle de langage en utilisant Ludwig, un outil puissant qui simplifie le cycle de vie de l'apprentissage automatique. Le processus implique l'utilisation d'une configuration de modèle spécifique et d'un ensemble de données pour adapter un modèle pré-entraîné à une tâche spécialisée.
+This section explains how to perform fine-tuning of a language model using Ludwig, a powerful tool that simplifies the machine learning lifecycle. The process involves using a specific model configuration and a dataset to adapt a pre-trained model to a specialized task.
 
 Configuration
 -------------
 
-Avant de commencer, assurez-vous que Ludwig est installé et configuré dans votre environnement. Vous devrez également configurer le token du Hugging Face Hub pour accéder aux modèles pré-entraînés. Ceci est réalisé en définissant la variable d'environnement HUGGING_FACE_HUB_TOKEN avec votre clé API Hugging Face :
+Before starting, ensure that Ludwig is installed and configured in your environment. You will also need to configure the Hugging Face Hub token to access pre-trained models. This is achieved by setting the environment variable HUGGING_FACE_HUB_TOKEN with your Hugging Face API key:
 
 .. code-block:: bash
 
@@ -33,17 +33,17 @@ Avant de commencer, assurez-vous que Ludwig est installé et configuré dans vot
     import os
     os.environ["HUGGING_FACE_HUB_TOKEN"] = os.getenv('HUGGINGFACE_API_KEY')
 
-Ludwig nécessite une configuration YAML qui décrit les paramètres du modèle et de l'entraînement. Les éléments clés de cette configuration incluent :
+Ludwig requires a YAML configuration that describes the model and training parameters. Key elements of this configuration include:
 
-- model_type : Indique le type de modèle. Pour les modèles de langage, 'llm' est utilisé.
-- base_model : Spécifie le modèle pré-entraîné à utiliser. Plusieurs options peuvent être fournies, commentées pour un changement facile.
-- quantization : Applique la quantification du modèle pour réduire la taille du modèle, avec 'bits' spécifiant le niveau de quantification.
-- adapter : Un adaptateur permet un fine-tuning efficace. L'adaptateur 'lora' est utilisé dans cet exemple.
-- prompt : Définit le modèle de prompt pour les données d'entrée.
-- input_features et output_features : Décrivent les structures de données d'entrée et de sortie et les étapes de prétraitement.
-- trainer : Configure le processus d'entraînement, y compris le taux d'apprentissage, la taille du lot et les époques.
+- model_type: Indicates the type of model. For language models, 'llm' is used.
+- base_model: Specifies the pre-trained model to use. Several options can be provided, commented for easy change.
+- quantization: Applies model quantization to reduce model size, with 'bits' specifying the quantization level.
+- adapter: An adapter allows for efficient fine-tuning. The 'lora' adapter is used in this example.
+- prompt: Defines the prompt template for input data.
+- input_features and output_features: Describe the input and output data structures and preprocessing steps.
+- trainer: Configures the training process, including learning rate, batch size, and epochs.
 
-Voici un extrait de la configuration YAML :
+Here is an excerpt from the YAML configuration:
 
 .. code-block:: yaml
 
@@ -55,11 +55,11 @@ Voici un extrait de la configuration YAML :
         type: lora
     prompt:
         template: |
-            ### Instruction :
+            ### Instruction:
             {instruction}
-            ### Entrée :
+            ### Input:
             {input}
-            ### Réponse :
+            ### Response:
     input_features:
         - name: prompt
           type: text
@@ -72,21 +72,21 @@ Voici un extrait de la configuration YAML :
 Dataset
 -------
 
-Le dataset qu'on a utilisé dans cet exemple c'est Alpaca, c'est une ressource unique destinée à l'entraînement et au fine-tuning des modèles de langue pour mieux suivre **les instructions**.
+The dataset used in this example is Alpaca, a unique resource intended for training and fine-tuning language models to better follow **instructions**.
 
-Alpaca comprend 52 000 instructions et démonstrations générées par l'engine text-davinci-003 d'OpenAI. Ce dataset est spécialement conçu pour le fine-tuning instructif des modèles de langue, afin d'améliorer leur capacité à suivre des instructions.
+Alpaca includes 52,000 instructions and demonstrations generated by OpenAI's text-davinci-003 engine. This dataset is specifically designed for instructive fine-tuning of language models to improve their ability to follow instructions.
 
 .. image:: ../images/alpaca.png
     :width: 100%
     :align: center
     :alt: DATASET Alpaca
 
-Entraînement
-------------
+Training
+--------
 
-Pour entraîner le modèle, chargez la configuration et spécifiez l'ensemble de données. La classe LudwigModel est utilisée avec la méthode train :
+To train the model, load the configuration and specify the dataset. The LudwigModel class is used with the train method:
 
-.. code-block:: python    
+.. code-block:: python
 
     from ludwig.api import LudwigModel
     import yaml
@@ -96,18 +96,18 @@ Pour entraîner le modèle, chargez la configuration et spécifiez l'ensemble de
     model = LudwigModel(config=config, logging_level=logging.INFO)
     results = model.train(dataset="ludwig://alpaca")
 
-Sauvegarde du Modèle
---------------------
+Saving the Model
+----------------
 
-Après l'entraînement, sauvegardez le modèle pour une utilisation ou un déploiement ultérieurs :
+After training, save the model for later use or deployment:
 
 .. code:: python
 
     model.save("results")
 
-Vous pouvez ainsi le sauvegarder directement sur la plateforme huggingface 🤗
+You can also save it directly on the Hugging Face platform 🤗
 
 .. code:: bash
-    
+
     python -m ludwig.upload hf_hub --repo_id "Ensamien_001/mistralai-7B-v01-fine-tuned-using-ludwig-4bit" --model_path results/api_experiment_run_2
 

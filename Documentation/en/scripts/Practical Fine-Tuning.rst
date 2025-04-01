@@ -27,7 +27,8 @@ Overview
 
 Introduction
 ------------
-For educational purposes, we will engage in practical activities to firmly consolidate the concepts in our minds, including code examples and tutorials.
+For educational purposes, we will engage in practical activities to firmly
+consolidate the concepts in our minds, including code examples and tutorials.
 
 Libraries Used
 -----------------------
@@ -36,11 +37,13 @@ Libraries Used
 - **Llama Library**
 
 .. note::
-   These are not necessarily the libraries we used in the project, but they could be a good starting point for anyone wishing to explore.
+   These are not necessarily the libraries we used in the project, but they
+   could be a good starting point for anyone wishing to explore.
 
-
-
-In this first example, we will use the Llama library to import some pre-trained and open-source models hosted on Hugging Face (in this example, it is Llama 2.7). We will compare their outputs before and after fine-tuning them for discussion.
+In this first example, we will use the Llama library to import some pre-trained
+and open-source models hosted on Hugging Face (in this example, it is Llama
+2.7). We will compare their outputs before and after fine-tuning them for
+discussion.
 
 Difference between a fine-tuned model and a pre-trained architecture:
 ------------------------------------
@@ -67,7 +70,11 @@ Difference between a fine-tuned model and a pre-trained architecture:
    print(finetuned_model.predict("Tell me how to fix a broken car window"))
 
 .. note::
-We can fine-tune a model more than once for additional features. As seen here, we have fine-tuned the LLM for discussion, but we can also fine-tune it to play, for example, the role of an assistant in a given company, using their Q&A information or previous conversations between assistant and client.
+   We can fine-tune a model more than once for additional features. As seen
+   here, we have fine-tuned the LLM for discussion, but we can also fine-tune
+   it to play, for example, the role of an assistant in a given company, using
+   their Q&A information or previous conversations between assistant and
+   client.
 
 
 

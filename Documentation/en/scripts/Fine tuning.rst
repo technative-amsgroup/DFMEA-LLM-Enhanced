@@ -1,10 +1,10 @@
-Finetuning 🔧
+Fine-tuning 🔧
 =============
 
 .. toctree::
     :maxdepth: 2
-    :caption: Parties:
+    :caption: Sections:
 
-    Compréhension de l'Affinage
-    Affinage Pratique
+    Understanding Fine-tuning
+    Practical Fine-tuning
 

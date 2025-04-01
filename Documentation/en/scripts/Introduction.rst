@@ -9,7 +9,7 @@ Processing (NLP). These approaches are revolutionizing the way companies
 address challenges related to product quality, customer satisfaction, and risk
 management.
 
-On one hand, traditional FMECA has long been a cornerstone of the product
+On one hand, traditional FMEA has long been a cornerstone of the product
 development process, providing a systematic methodology to identify and
 mitigate potential failure modes. However, manual methods present challenges,
 particularly in terms of labor-intensive processes and susceptibility to human
@@ -32,7 +32,7 @@ deep understanding of customer needs and concerns.
 
 The structure of our work will include a literature review on the state of the
 art in these two areas, highlighting the advantages and limitations of LLMs in
-the context of FMECA and NLP. We will then propose an integrative framework,
+the context of FMEA and NLP. We will then propose an integrative framework,
 illustrated by a case study demonstrating the practical implementation of our
 methodology. Finally, we will discuss the lessons learned and future
 perspectives for the development of this synergistic approach.
