@@ -5,7 +5,10 @@ Gestion du contenu dynamique avec Selenium
 Introduction
 ------------
 
-Selenium est un outil puissant pour automatiser les navigateurs web, mais il peut être difficile de gérer le contenu dynamique. Le contenu dynamique fait référence aux éléments d'une page web qui changent ou se mettent à jour dynamiquement, tels que les éléments qui apparaissent ou disparaissent en fonction des interactions de l'utilisateur ou des réponses du serveur.
+Selenium is a powerful tool for automating web browsers, but it can be
+challenging to manage dynamic content. Dynamic content refers to elements on a
+web page that change or update dynamically, such as elements that appear or
+disappear based on user interactions or server responses.
 
 Dans ce guide, nous vous expliquerons étape par étape comment gérer le contenu dynamique avec Selenium, en fournissant des exemples et les résultats attendus.
 

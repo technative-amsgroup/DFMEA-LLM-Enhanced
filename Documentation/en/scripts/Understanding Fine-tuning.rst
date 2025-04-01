@@ -3,14 +3,22 @@ Understanding Fine-Tuning: Theory and Concepts 📖
 
 What is fine-tuning?
 -------------------------
-Fine-tuning is an iterative process aimed at improving a model's performance on a specific task while preserving the knowledge previously acquired during initial training. This approach relies on the model's ability to generalize to new domains while maintaining its ability to specialize. By adjusting the weights of the connections between neurons, fine-tuning allows the model to adapt to the new task without significantly altering pre-existing knowledge.
+Fine-tuning is an iterative process aimed at improving a model's performance on
+a specific task while preserving the knowledge previously acquired during
+initial training. This approach relies on the model's ability to generalize to
+new domains while maintaining its ability to specialize. By adjusting the
+weights of the connections between neurons, fine-tuning allows the model to
+adapt to the new task without significantly altering pre-existing knowledge.
 
 .. image:: ../images/finetuning_01.png
    :width: 50%
    :align: center
    :alt: fine-tuning
 
-Take, for example, a standard natural language model. While it can answer your specific questions about a certain domain, the response is generally vague. However, if we fine-tune it on data specific to this domain, the response will be transformed to be more precise and detailed.
+Take, for example, a standard natural language model. While it can answer your
+specific questions about a certain domain, the response is generally vague.
+However, if we fine-tune it on data specific to this domain, the response will
+be transformed to be more precise and detailed.
 
 .. image:: ../images/finetuning_02.png
    :width: 50%
@@ -25,17 +33,17 @@ The advantages of fine-tuning
    - Increase coherence
    - Reduce unwanted information
 
-- Privacy:   
+- Privacy:
    - On-site or VPC (Virtual Private Cloud)
    - Prevent leaks
    - No violations
 
-- Cost:  
+- Cost:
    - Reduce cost per request
    - Increase transparency
    - Greater control
 
-- Reliability:   
+- Reliability:
    - Control availability
    - Reduce latency
    - Moderation
@@ -68,11 +76,11 @@ Tasks for fine-tuning a language model
    - Expansion: Text input, more text output
       - "Writing"
       - Chat, writing emails, writing code
-      
+
 - Task clarity is a key indicator of success
 - Clarity means knowing what is bad, good, and better
 
-.. note:: 
+.. note::
    The fine-tuning process is generally an iterative process.
 
 .. figure:: ../images/itteratif.png

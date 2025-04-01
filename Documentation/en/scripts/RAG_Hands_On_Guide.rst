@@ -1,4 +1,3 @@
-
 Guide Pratique pour Implémenter RAG depuis le Début
 ===================================================
 
@@ -10,7 +9,7 @@ Configuration de Votre Environnement
 ------------------------------------
 1. **Installation de Python** : Assurez-vous que Python 3.6 ou une version ultérieure est installé sur votre système.
 2. **Installation des Dépendances** : Installez les bibliothèques nécessaires en exécutant :
-   
+
    .. code-block:: bash
 
       pip install transformers datasets torch faiss-cpu
@@ -32,7 +31,7 @@ Implémentation du Modèle RAG
    .. code-block:: python
 
       from transformers import RagTokenizer, RagRetriever, RagSequenceForGeneration
-      
+
       tokenizer = RagTokenizer.from_pretrained("facebook/rag-sequence-nq")
       retriever = RagRetriever.from_pretrained("facebook/rag-sequence-nq", index_name="exact", use_dummy_dataset=True)
       model = RagSequenceForGeneration.from_pretrained("facebook/rag-sequence-nq", retriever=retriever)

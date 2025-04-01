@@ -18,10 +18,10 @@ Une fois que nous avons préparé le jeu de données d'affinage de manière appr
    :alt: tokenizing
 
 ::
-   
+
 .. attention::
    La tokenisation ne signifie pas que chaque mot est traité comme un token. Cela dépend du modèle utilisé.
-   
+
 
 D'accord, commençons par tokeniser un seul texte a fin d'avoir une idée claire de ce qu'il se passe
 

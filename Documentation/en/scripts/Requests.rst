@@ -67,7 +67,7 @@ Lorsque vous travaillez avec des requêtes, il est important de gérer les erreu
          response.raise_for_status()  # Génère une exception si la requête a échoué
     except requests.exceptions.RequestException as e:
          print("Une erreur s'est produite :", e)
-         
+
 Conclusion
 ----------
 

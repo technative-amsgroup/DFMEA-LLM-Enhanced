@@ -60,7 +60,10 @@ helping the company make informed decisions based on observed trends.
 The Chat Interface
 ----------------
 
-The chat interface offers the functionality for users to generate the company's DFMEA (Design Failure Mode and Effect Analysis) reports via the RAG model. By interacting with this interface, users can ask questions or submit specific requests regarding aspects of vehicle design.
+The chat interface offers the functionality for users to generate the company's
+DFMEA (Design Failure Mode and Effect Analysis) reports via the RAG model. By
+interacting with this interface, users can ask questions or submit specific
+requests regarding aspects of vehicle design.
 
 .. image:: ../images/chat.png
     :width: 90%
@@ -70,9 +73,23 @@ The chat interface offers the functionality for users to generate the company's 
 DFMEA Table Generation
 ---------------------------
 
-When a user submits a review containing complaints about a vehicle, the chat interface activates using the RAG model. In the given context, the model is instructed to generate HTML code for a table of relevant information as well as a DFMEA (Design Failure Mode and Effect Analysis) table. The model, through prompt engineering, produces the necessary HTML code, explicitly excluding unauthorized tags and elements. It thus creates two distinct tables: a table of relevant information, including details such as the year of purchase, current mileage, major repairs, etc., and a detailed DFMEA table, categorizing vehicle components, potential failure modes, associated effects, probable causes, current controls, as well as severity, occurrence, detection measures, and risk priority numbers (RPN).
+When a user submits a review containing complaints about a vehicle, the chat
+interface activates using the RAG model. In the given context, the model is
+instructed to generate HTML code for a table of relevant information as well as
+a DFMEA (Design Failure Mode and Effect Analysis) table. The model, through
+prompt engineering, produces the necessary HTML code, explicitly excluding
+unauthorized tags and elements. It thus creates two distinct tables: a table of
+relevant information, including details such as the year of purchase, current
+mileage, major repairs, etc., and a detailed DFMEA table, categorizing vehicle
+components, potential failure modes, associated effects, probable causes,
+current controls, as well as severity, occurrence, detection measures, and risk
+priority numbers (RPN).
 
-The chat interface, being an HTML interpreter, then displays these generated tables directly in the conversation. The result is a clear and concise presentation of relevant information and DFMEA analysis, ready to be interpreted and used by the user. This process ensures an accurate and immediate response to the specific requirements defined in the context.
+The chat interface, being an HTML interpreter, then displays these generated
+tables directly in the conversation. The result is a clear and concise
+presentation of relevant information and DFMEA analysis, ready to be
+interpreted and used by the user. This process ensures an accurate and
+immediate response to the specific requirements defined in the context.
 
 .. image:: ../images/chat1.png
     :width: 90%
@@ -87,7 +104,11 @@ The chat interface, being an HTML interpreter, then displays these generated tab
 Dashboard
 ----------
 
-The Dashboard allows us to visualize trends in customer information in our database and make decisions accordingly. It is a summary of all user interactions with the chatbot. Key features of this dashboard include real-time analysis, continuous evaluation of improvement impacts, in-depth exploitation of reviews, and automatic updating of indicators.
+The Dashboard allows us to visualize trends in customer information in our
+database and make decisions accordingly. It is a summary of all user
+interactions with the chatbot. Key features of this dashboard include real-time
+analysis, continuous evaluation of improvement impacts, in-depth exploitation
+of reviews, and automatic updating of indicators.
 
 .. image:: ../images/dashboard.png
     :width: 90%
@@ -99,13 +120,20 @@ The Dashboard allows us to visualize trends in customer information in our datab
     :align: center
     :alt: chat interface
 
-Using the Pareto diagram, also known as the 80/20 rule, we simplify the analysis by identifying and prioritizing major problems or the most predominant causes contributing to defects, errors, or inefficiencies.
+Using the Pareto diagram, also known as the 80/20 rule, we simplify the
+analysis by identifying and prioritizing major problems or the most predominant
+causes contributing to defects, errors, or inefficiencies.
 
-To delve deeper, we can also visualize the temporal evolution of each part. This process is updated in real-time with each new customer review issued. Below is an overview of the specific statistics for each part in our dashboard.
+To delve deeper, we can also visualize the temporal evolution of each part.
+This process is updated in real-time with each new customer review issued.
+Below is an overview of the specific statistics for each part in our dashboard.
 
 .. image:: ../images/graphs.png
     :width: 90%
     :align: center
     :alt: chat interface
 
-As illustrated in Figure 12, each individual part is represented based on the number of occurrences in customer reviews. This process is dynamic and can be adapted to specifically analyze negative, positive reviews, by month, by product, etc.
+As illustrated in Figure 12, each individual part is represented based on the
+number of occurrences in customer reviews. This process is dynamic and can be
+adapted to specifically analyze negative, positive reviews, by month, by
+product, etc.

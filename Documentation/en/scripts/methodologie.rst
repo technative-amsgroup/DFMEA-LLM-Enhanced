@@ -1,18 +1,17 @@
-Méthodologie
+Methodology
 --------------
 
-Notre méthodologie se base sur deux approches différentes : la première approche
-est le fine-tuning et la seconde approche est le prompt ingéniering.
-Comme le montre la Figure 1, notre projet vise les trois niveaux, à savoir :
-détection des noms de pièces, des problèmes liés à ces pièces et aussi les informations
-cruciales qui nous permettrons de comprendre le contexte général du problème. Mais
-pour le moment, nous allons nous concentrer sur la création d’un modèle capable de
-détecter les noms de pièces dans les avis clients et par la suite, nous pouvons chercher
-une approche pour réaliser les autres tâches. Pour cela, nous avons décidé d’utiliser
-une approche basée sur le Fine-tuning des modèles Transformers, notamment le
-modèle GPT-3 L’avantage de ce genre d’approche est que les modèles de base sont
-déjà si performants qu’ils peuvent vite donner de bons résultats sur peu de données
-mais l’inconvénient est qu’ils sont coûteux.
+Our methodology is based on two different approaches: the first approach is
+fine-tuning and the second approach is prompt engineering. As shown in Figure
+1, our project targets three levels, namely: detection of part names, issues
+related to these parts, and also crucial information that will allow us to
+understand the general context of the problem. But for now, we will focus on
+creating a model capable of detecting part names in customer reviews, and
+subsequently, we can look for an approach to accomplish the other tasks. For
+this, we have decided to use an approach based on Fine-tuning Transformer
+models, notably the GPT-3 model. The advantage of this kind of approach is that
+the base models are already so performant that they can quickly yield good
+results with little data, but the disadvantage is that they are costly.
 
 .. image:: ../images/review.png
     :width: 90%
@@ -23,5 +22,6 @@ mais l’inconvénient est qu’ils sont coûteux.
 .. toctree::
     :maxdepth: 2
 
-    Approchefine-tuning
-    Approcheprompt-ing
+    Fine-tuningApproach
+    PromptEngineeringApproach
+
