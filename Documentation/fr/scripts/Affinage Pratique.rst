@@ -19,7 +19,7 @@ Affinage Pratique : Guide Pratique 🖥
    entrainement
    Ludwig
    evaluation
-   
+
 ..
 
 Overview
@@ -36,7 +36,7 @@ Bibliothèques Utilisées
 - **Llama Library**
 
 .. note::
-   Ce ne sont pas nécessairement les bibliothèques que nous avons utilisées dans le projet, mais elles pourraient être un bon point de départ pour quiconque     
+   Ce ne sont pas nécessairement les bibliothèques que nous avons utilisées dans le projet, mais elles pourraient être un bon point de départ pour quiconque
    souhaite explorer.
 
 
@@ -71,6 +71,6 @@ Difference entre un modèle finetuné et une architecture pré-entrainée:
 Nous pouvons affiner un modèle plus d'une fois pour des fonctionnalités supplémentaires. Comme on le voit ici, nous avons affiné le LLM pour la discussion, mais nous pouvons également l'affiner pour jouer, par exemple, le rôle d'un assistant dans une entreprise donnée, en utilisant leurs informations de questions-réponses ou des conversations précédentes entre assistant et client.
 
 
-    
+
 
 
