@@ -1,4 +1,7 @@
+_This repo is used to translate the French text to English._
+
 # LLM Enhanced FMEA Documentation
+
 Welcome to the documentation repository for LLM Enhanced FMEA, a project focused on manifesting the use of LLMs in the creation of FMEA tables 
 
 ## Getting Started with Documentation Development
